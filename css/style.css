@@ -11,15 +11,19 @@ body{
     width: 800px;
     margin: 100px auto;
     background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(200,200,200,0.5));
-    border: 10px solid red;
+    /* border: 10px solid red; */
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: auto;
+    align-items: center;
+    /* When centering items has to be targeted on the parent container */
+    padding: 5px;
+    border-radius: 10px;
 }
 .welcome{
     flex-basis: 40%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .sign-in{
     flex-basis: 60%;
@@ -68,6 +72,22 @@ a{
     right: 0;
     margin-right: 10px;
     margin-bottom:10px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.4s;
+                color:0.5s;
+                padding:1s;
+                box-shadow:1s
+
+}
+a:hover{
+    padding: 15px;
+    background-color: lightblue;
+    box-shadow: 5px 2px 5px gray;
+    color: black;
 }
 
 
