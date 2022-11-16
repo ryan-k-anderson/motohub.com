@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/bmx-favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>BMX Motohub Sign Up</title>
 </head>
 <body>
     <div id="nav-bar">
-        <h1>Hello</h1>
+        <!-- <h1>Hello</h1> -->
         <a href="sign-in.html">Back to Sign in</a>
     </div>
 
     <div id="registration">
         <form action="">
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            <input type="text" id="first-name" name="first-name" placeholder="John" required>
 
             <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
 
             <label for="dob">Birthday:</label>
             <input type="date" id="dob" name="dob" required>
@@ -38,8 +39,11 @@
             <select name="state" id="state">
                 <!-- JS Handles the options -->
             </select>
+            <label for="proficiency" id="proficiency">Please select your proficiency</label>
+            
         </form>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 </body>
 </html>
