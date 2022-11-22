@@ -6,26 +6,26 @@ let s = 0
 for(s=0; s <= state.length -1;s++){
 console.log(state[s])
 //Loop through the states array
-const option = document.createElement('option')
-const innerOption = document.createTextNode(`${state[s]}`)
-option.appendChild(innerOption)
+    const option = document.createElement('option')
+    const innerOption = document.createTextNode(`${state[s]}`)
+    option.appendChild(innerOption)
 //Create an option element and append the state string from the STATES ARRAY through each iteration
 
-const element = document.getElementById('state')
-element.appendChild(option)
+    const element = document.getElementById('state')
+    element.appendChild(option)
 //Target the 'state' id in the form from sign-up.html to append the whole element <option> state[s] </option>
 }
 
-const proficiency = ['Novice', 'Intermediate', 'Girl', 'Girl Expert','Expert']
+const proficiency = ['Novice', 'Intermediate', 'Girl', 'Girl Expert','Expert', 'Cruiser']
 let p = 0
 for(p=0;p<=proficiency.length-1;p++){
     console.log(proficiency[p])
-    
-    const check = $(document).createElement('input')
-    const innerCheck = $(document).createTextNode(`${proficiency[p]}`)
 
-    const elem = $(document).getElementById('proficiency')
+    const check = document.createElement('option');
+    const innerCheck = document.createTextNode(`${proficiency[p]}`);
+    check.appendChild(innerCheck);
 
-    $(elem).after(check)
-            .append(innerCheck)
+    const elem = document.getElementById('proficiency');
+    elem.appendChild(check);
+
 }
